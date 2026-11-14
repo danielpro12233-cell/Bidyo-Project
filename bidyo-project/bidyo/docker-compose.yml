@@ -1,0 +1,12 @@
+services:
+  bidyo:
+    build: .
+    ports: ["3000:3000"]
+    env_file: .env
+    environment:
+      DATA_DIR: /data
+    volumes:
+      - bidyo-data:/data
+    restart: unless-stopped
+volumes:
+  bidyo-data:

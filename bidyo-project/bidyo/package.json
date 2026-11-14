@@ -1,0 +1,13 @@
+{
+  "name": "bidyo",
+  "version": "1.0.0",
+  "description": "Bidyo - upload, share and watch videos. Watching is open to everyone; Gmail OTP login only for uploading.",
+  "main": "server.js",
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "DEV_RETURN_OTP=1 node --disable-warning=ExperimentalWarning server.js",
+    "test": "node --disable-warning=ExperimentalWarning test/smoke.test.js"
+  },
+  "license": "MIT"
+}
